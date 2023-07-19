@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import { useRef, useState } from 'react';
 // import Swiper styles
 import 'swiper/scss';
-import './StickySlider.scss';
+import './SliderNew.scss';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -19,7 +19,7 @@ import 'swiper/css/free-mode';
 import { useContext } from 'react';
 import { SliderContext } from '../../App';
 
-const Slider1 = () => {
+const SliderNew = () => {
   const { items } = useContext(SliderContext);
   const swiper = useSwiper();
   //console.log(swiper);
@@ -47,7 +47,7 @@ const Slider1 = () => {
       mousewheel={true}
       //navigation
       // pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
+      //scrollbar={{ draggable: true }}
       //onSwiper={(swiper) => console.log(swiper, 'onSwiper')}
       //onSlideChange={() => console.log('slide change')}
     >
@@ -65,4 +65,4 @@ const Slider1 = () => {
   );
 };
 
-export default Slider1;
+export default SliderNew;

@@ -1,7 +1,6 @@
 import './GridBlock.scss';
 
 export default function GridBlock({ items }) {
-  console.log(items, 'items grid');
   return (
     <div className="gridBlock">
       {items?.map((item, i) => {
