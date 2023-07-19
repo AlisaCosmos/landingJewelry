@@ -1,0 +1,42 @@
+@import '../../styles/vars';
+.header {
+  position: relative;
+  &__inner {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(360deg, #464341 0%, #010101 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+  }
+  &__logo {
+    cursor: pointer;
+    width: 213px;
+  }
+
+  .contacts__number_desc {
+    font-size: 24px;
+    line-height: normal;
+    font-family: $generalFont;
+    color: $linkFontColors;
+  }
+}
+.contacts__number_mob {
+  display: none;
+}
+
+@media (max-width: $mobile) {
+  .header {
+    &__logo {
+      width: 118px;
+    }
+    .contacts__number_desc {
+      display: none;
+    }
+    .contacts__number_mob {
+      display: block;
+    }
+  }
+}

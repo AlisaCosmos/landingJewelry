@@ -1,0 +1,25 @@
+@import '../../styles/vars';
+
+.product {
+  margin-top: 160px;
+  position: relative;
+  &__inner {
+    height: 840px;
+  }
+  &__title {
+    //margin-bottom: 123px;
+  }
+  &__sliderWrapper {
+    border: 2px solid red;
+    //height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 343px;
+    height: 500px;
+  }
+}
+@media (max-width: $mobile) {
+  .product {
+    margin-top: 70px;
+  }
+}

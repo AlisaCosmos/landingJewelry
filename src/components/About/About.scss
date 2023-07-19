@@ -1,0 +1,17 @@
+@import '../../styles/vars';
+
+.about {
+  margin-top: 200px;
+
+  &__title {
+    margin-bottom: 123px;
+  }
+}
+@media (max-width: $mobile) {
+  .about {
+    margin-top: 72px;
+    &__title {
+      margin-bottom: 64px;
+    }
+  }
+}
