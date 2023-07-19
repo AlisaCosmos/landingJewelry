@@ -1,4 +1,5 @@
 import GridBlock from '../GridBlock/GridBlock';
+import { itemsContent1 } from '../../assets/data/itemsContent1';
 import './SectionThird.scss';
 
 export default function SectionThird() {
@@ -7,7 +8,7 @@ export default function SectionThird() {
       <div className="sectionThird__inner container__row">
         <h1 className="sectionThird__title">ut aliquip ex ea commodo consequat</h1>
         <div>
-          <GridBlock />
+          <GridBlock items={itemsContent1} />
         </div>
       </div>
     </div>
