@@ -1,3 +1,4 @@
+@import '../../styles/vars';
 .swiper {
   //width: 2440px;
   //margin-top: 100px;
@@ -17,12 +18,21 @@
     margin-right: 260px;
   }
   .swiper-wrapper {
+    will-change: transform;
+    transform-style: preserve-3d;
+    -webkit-transition: $transition !important;
+    transition: $transition !important;
   }
   .slide__img {
     //display: flex;
     //margin: 0 auto;
     max-width: 320px;
     min-width: 320px;
+    background-size: cover;
+    background-position: center;
+    will-change: transform;
+    -webkit-transition: $transition !important;
+    transition: $transition !important;
     //object-fit: contain;
   }
 }

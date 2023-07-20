@@ -14,6 +14,9 @@ export default function SectionSecond() {
       <div className="sectionSecond__sliderWrapper">
         <SliderNew />
       </div>
+      {/*<div className="sectionSecond__sliderWrapper">
+        <Slider />
+      </div>*/}
     </div>
   );
 }

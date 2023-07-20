@@ -1,6 +1,7 @@
 import GridBlock from '../GridBlock/GridBlock';
 import { itemsContent1 } from '../../assets/data/itemsContent1';
 import './SectionThird.scss';
+import Slider from '../Slider/Slider';
 
 export default function SectionThird() {
   return (

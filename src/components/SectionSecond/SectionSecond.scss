@@ -3,6 +3,7 @@
 .sectionSecond {
   margin-top: 160px;
   position: relative;
+
   &__inner {
     height: 840px;
   }
@@ -11,10 +12,10 @@
   }
   &__sliderWrapper {
     //height: 100%;
-    width: 100%;
+    max-width: 1920px;
     position: absolute;
     top: 343px;
-    height: 500px;
+    //height: 500px;
   }
 }
 @media (max-width: $mobile) {

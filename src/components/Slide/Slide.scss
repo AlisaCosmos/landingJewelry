@@ -1,20 +1,26 @@
 .slide {
   //flex-grow: 0;
-  height: 489px;
-  flex: 0 0 20%;
-  //min-width: 320px;
-  //max-width: 320px;
+  height: 100%;
+  //flex: 0 0 20%;
+  min-width: 320px;
+  max-width: 320px;
   margin-right: 40px;
+  flex-shrink: 0;
+  background-size: cover;
+  background-position: center;
   //flex: 1 0 100%;
-  position: relative;
+  //position: relative;
+
   &:last-child {
     margin-right: 0px;
+    //padding-right: 260px;
   }
   &__img {
     //display: flex;
     //margin: 0 auto;
     height: 100%;
-    width: 100%;
+    max-width: 100%;
+    pointer-events: none;
     //object-fit: contain;
   }
 }

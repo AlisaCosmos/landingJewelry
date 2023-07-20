@@ -1,4 +1,12 @@
-import { FreeMode, Navigation, Mousewheel, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import {
+  Autoplay,
+  FreeMode,
+  Navigation,
+  Mousewheel,
+  Pagination,
+  Scrollbar,
+  A11y,
+} from 'swiper/modules';
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import { useRef, useState } from 'react';
 // import Swiper styles
@@ -34,17 +42,20 @@ const SliderNew = () => {
   return (
     <Swiper
       className="swiper"
-      modules={[FreeMode, Mousewheel, Navigation, Pagination, Scrollbar, A11y]}
+      modules={[FreeMode, Mousewheel, Navigation, Pagination, Scrollbar, A11y, Autoplay]}
       spaceBetween={40}
       slidesPerView={5.5}
       slidesPerGroup={5}
       //slidesPerColumn={1}
       slidesOffsetBefore={260}
       slidesOffsetAfter={260}
-      //speed={800}
+      speed={2400}
       //centeredSlides={true}
       freeMode={true}
-      mousewheel={true}
+      mousewheel={{
+        enable: true,
+        sensitivity: 2.4,
+      }}
       //navigation
       // pagination={{ clickable: true }}
       //scrollbar={{ draggable: true }}

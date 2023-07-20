@@ -5,7 +5,8 @@ import SlidersList from '../SlidersList/SlidersList';
 import { SliderContext } from '../../App';
 
 export default function Slider() {
-  const { items, setSlide, touchPosition, setTouchPosition } = useContext(SliderContext);
+  const { items, setSlide, touchPosition, setTouchPosition, triggerRef } =
+    useContext(SliderContext);
   const changeSlide = (direction = 1) => {
     let slideNumber = 0;
   };
@@ -32,11 +33,15 @@ export default function Slider() {
   };
 
   return (
-    <div className="slider container__row" onTouchStart={onTouchStart} onTouchMove={onTouchMove}>
-      <div className="slider__viewport">
-        <div className="slider__horizontalContainer">
-          <SlidersList />
-        </div>
+    <div
+      className="slider scroll-section-outer"
+      onTouchStart={onTouchStart}
+      onTouchMove={onTouchMove}>
+      <div className="slider__viewport" ref={triggerRef}>
+        {/* <div className="slider__horizontalContainer">
+          
+        </div> */}
+        <SlidersList />
       </div>
     </div>
   );
